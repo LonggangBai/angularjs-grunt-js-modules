@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app/script/app.js"></script>
+
+    <script src="app/script/commons/service/Page1Service.js"></script>
+    <script src="app/script/commons/service/Page2Service.js"></script>
+    <script src="app/script/ticket/service/Page3Service.js"></script>
+    <script src="app/script/ticket/service/PageTabService.js"></script>
+
+    <script src="app/script/commons/controller/Page1Controller.js"></script>
+    <script src="app/script/commons/controller/Page2Controller.js"></script>
+    <script src="app/script/ticket/controller/Page3Controller.js"></script>
+    <script src="app/script/ticket/controller/PageTabController.js"></script>
+
+
+
+
+
+</head>
+<body ng-app="mainapp">
+<h1>AngularJS Home Page (NG-router Demonstration)</h1>
+<!--
+也就是说 PageTab.html 将对装下所有的子页面.
+ngRoute 采用ng-view，ui-route采用data-ui-view
+-->
+<div ng-view></div>
+
+</body>
+<html>
